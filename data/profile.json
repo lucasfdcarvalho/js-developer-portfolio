@@ -1,10 +1,10 @@
 {
   "name": "Lucas F Carvalho",
-  "photo": "https://avatars.githubusercontent.com/u/3266640?v=4",
+  "photo": "https://avatars.githubusercontent.com/u/185710191?s=400&u=8ce72d59bba9234a6b2d5dd3f2ad9ae510023047&v=4",
   "job": "Information Systems Student",
   "location": "Barretos - SP",
   "phone": "(17) 98147-4681",
-  "email": "lucas@gmail.com",
+  "email": "lucasfreitasdecarvalho15@gmail.com",
   "skills": {
     "hardSkills": [
       {
@@ -33,7 +33,6 @@
       }
     ],
     "softSkills": [
-      "Empatia",
       "Liderança",
       "Trabalho em equipe",
       "Flexibilidade",
@@ -59,8 +58,8 @@
   "professionalExperience": [
     {
       "name": "JavaScript Developer / DIO",
-      "period": " DEC 2024 - FEB 2025",
-      "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
+      "period": "DEC 2024 - FEB 2025",
+      "description": "Concluí um curso abrangente de JavaScript, que explorou desde os conceitos fundamentais da linguagem até sua aplicação no desenvolvimento web e na criação de algoritmos eficientes. Durante meus estudos, aprofundei minha lógica de programação, entendendo como estruturar código de forma otimizada e resolver problemas computacionais. Além disso, aprendi a manipular o DOM, trabalhar com eventos, consumir APIs e aplicar técnicas de programação assíncrona."
     }
   ]
 }
