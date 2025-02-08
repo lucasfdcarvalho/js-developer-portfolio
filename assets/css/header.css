@@ -94,3 +94,21 @@
         grid-area: information;
     }
 }
+
+@media (max-width: 391px){
+    .information .email {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+    }
+
+    .information .email::before {
+        flex-shrink: 0; /* Mantém o ícone fixo no tamanho certo */
+    }
+
+    .information .email{
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+}
