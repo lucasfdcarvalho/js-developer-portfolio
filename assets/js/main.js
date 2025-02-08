@@ -43,11 +43,32 @@ function updateProfileLanguages(profileData){
         .join("");
 }
 
+function verifyGitHub(portfolio){
+    const response = portfolio.github ? 'class="github"' : '';
+    return response;
+}
+
 function updateProfilePortfolio(profileData){
     const portfolio = document.querySelector("#profile-portfolio");
     portfolio.innerHTML = profileData.portfolio
-        .map((portfolio) => `<li><h3>${portfolio.name}</h3></li>`)
-        .join("");
+        .map((portfolio) => {
+            return `<li>
+                <h3 ${verifyGitHub(portfolio)}>${portfolio.name}</h3>
+                <a href="${portfolio.url}" target="_blank">${portfolio.url}</a>
+            
+            </li>`
+        }).join("");
+}
+
+function updateProfileExperience(profileData){
+    const experience = document.querySelector("#profile-professionalExperience");
+    experience.innerHTML = profileData.professionalExperience.map((experience) => {
+        return `<li>
+            <h3 class="title">${experience.name}<h3>
+            <p class="period">${experience.period}</p>
+            <p>${experience.description}</p>
+        </li>`
+    }).join("");
 }
 
 (async () =>{
@@ -56,5 +77,6 @@ function updateProfilePortfolio(profileData){
     updateProfileSkills(profileData);
     updateProfileLanguages(profileData);
     updateProfilePortfolio(profileData);
+    updateProfileExperience(profileData);
 })()
 
